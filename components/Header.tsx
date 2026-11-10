@@ -15,10 +15,10 @@ export function Header() {
             Dashboard
           </Link>
           <Show when="signed-out">
-            <SignInButton>
+            <SignInButton forceRedirectUrl="/dashboard" signUpForceRedirectUrl="/dashboard">
               <button className="font-medium hover:text-accent">Sign in</button>
             </SignInButton>
-            <SignUpButton>
+            <SignUpButton forceRedirectUrl="/dashboard" signInForceRedirectUrl="/dashboard">
               <button className="rounded-full bg-accent px-4 py-2 font-medium text-white shadow-sm transition hover:opacity-90">
                 Sign up
               </button>
